@@ -343,24 +343,23 @@ export default function LeadForm() {
   };
 
   const handleSubmit = async () => {
-try {
-await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
-method: "POST",
-mode: "no-cors",
-headers: {
-"Content-Type": "application/json",
-},
-body: JSON.stringify(data),
-});
+  try {
+    await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-console.log("Lead submitted:", data);
-setSubmitted(true);
-} catch (error) {
-console.error(error);
-alert("Submission failed");
-}
+    console.log("Lead submitted:", data);
+    setSubmitted(true);
+  } catch (error) {
+    console.error(error);
+    alert("Submission failed");
+  }
 };
-  };
 
   /* ---------------------------------------------------------------- */
   /*  THANK-YOU SCREEN                                                 */
