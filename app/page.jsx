@@ -354,6 +354,11 @@ export default function LeadForm() {
     });
 
     console.log("Lead submitted:", data);
+
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead");
+    }
+
     setSubmitted(true);
   } catch (error) {
     console.error(error);
