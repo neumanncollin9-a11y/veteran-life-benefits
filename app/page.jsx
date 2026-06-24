@@ -342,10 +342,24 @@ export default function LeadForm() {
     setStepIndex((i) => Math.max(0, i - 1));
   };
 
-  const handleSubmit = () => {
-    // TODO: replace with real API call (e.g. POST to your CRM / lead endpoint)
-    console.log('Lead submitted:', data);
-    setSubmitted(true);
+  const handleSubmit = async () => {
+try {
+await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
+method: "POST",
+mode: "no-cors",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(data),
+});
+
+console.log("Lead submitted:", data);
+setSubmitted(true);
+} catch (error) {
+console.error(error);
+alert("Submission failed");
+}
+};
   };
 
   /* ---------------------------------------------------------------- */
