@@ -423,7 +423,12 @@ export default function LeadForm() {
 >
   💬 Text Me
 </a>
-
+<a
+  href="/collin.vcf"
+  className="mt-3 inline-flex w-full items-center justify-center rounded-xl border-2 border-navy px-6 py-4 text-xl font-semibold text-navy hover:bg-slate-100"
+>
+  👤 Add to Contacts
+</a>
           <p className="mt-5 text-sm leading-relaxed text-muted">
             If you'd like to speak with me right away, simply tap the phone number above and your phone will call me automatically.
           </p>
