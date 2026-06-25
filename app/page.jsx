@@ -47,7 +47,7 @@ const STEPS = [
     type: 'single',
     eyebrow: 'Coverage',
     question: 'What type of coverage are you interested in?',
-    options: ['Final expense', 'Whole life', 'Term life', 'Mortgage protection', 'Not sure'],
+    options: ['Final expense', 'IUL(Index universal life)', 'Term life', 'Mortgage protection', 'Not sure'],
   },
   {
     id: 'health',
