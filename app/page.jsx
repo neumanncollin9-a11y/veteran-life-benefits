@@ -388,7 +388,13 @@ export default function LeadForm() {
         </p>
 
         <div className="mx-auto mt-8 max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="font-display text-2xl font-semibold uppercase tracking-wide text-navy">
+          
+     <img
+  src="/collin.jpg.jpeg"
+  alt="Collin Neumann"
+  className="mx-auto mb-6 h-32 w-32 rounded-full object-cover border-4 border-navy shadow-lg"
+/>
+<h2 className="font-display text-2xl font-semibold uppercase tracking-wide text-navy">
             Collin Neumann
           </h2>
 
