@@ -572,10 +572,24 @@ function Shell({ children }) {
 
       {/* Disclaimer */}
       <footer className="px-5 pb-8">
-        <p className="mx-auto max-w-xl text-center text-xs leading-relaxed text-muted">
-          {DISCLAIMER}
-        </p>
-      </footer>
+  <p className="mx-auto max-w-xl text-center text-xs leading-relaxed text-muted">
+    {DISCLAIMER}
+  </p>
+
+  <div className="mt-4 flex justify-center gap-6 text-sm">
+    <a href="/privacy" className="text-navy hover:underline">
+      Privacy Policy
+    </a>
+
+    <a href="/terms" className="text-navy hover:underline">
+      Terms of Service
+    </a>
+
+    <a href="/about" className="text-navy hover:underline">
+      About Us
+    </a>
+  </div>
+</footer>
     </main>
   );
 }
