@@ -408,6 +408,12 @@ export default function LeadForm() {
             <br />
             (262) 328-7608
           </a>
+<a
+  href="sms:+12623287608?body=Hi%20Collin,%20I%20just%20submitted%20my%20information%20on%20your%20website%20and%20would%20like%20to%20talk%20about%20life%20insurance."
+  className="mt-3 inline-flex w-full items-center justify-center rounded-xl border-2 border-navy px-6 py-4 text-xl font-semibold text-navy hover:bg-slate-100"
+>
+  💬 Text Me
+</a>
 
           <p className="mt-5 text-sm leading-relaxed text-muted">
             If you'd like to speak with me right away, simply tap the phone number above and your phone will call me automatically.
