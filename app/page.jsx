@@ -369,26 +369,60 @@ export default function LeadForm() {
   /* ---------------------------------------------------------------- */
   /*  THANK-YOU SCREEN                                                 */
   /* ---------------------------------------------------------------- */
-  if (submitted) {
-    return (
-      <Shell>
-        <div key="thanks" className="animate-stepIn text-center">
-          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-navy text-honor">
-            <Check className="h-8 w-8" />
-          </div>
-          <h1 className="font-display text-3xl font-semibold uppercase tracking-wide text-navy">
-            Received
-          </h1>
-          <p className="mx-auto mt-4 max-w-md text-lg leading-relaxed text-ink">{THANK_YOU}</p>
-          <div className="mt-8 flex items-center justify-center gap-1.5 text-honor">
-            <Chevron className="h-3 w-8" />
-            <Chevron className="h-3 w-8" />
-            <Chevron className="h-3 w-8" />
-          </div>
+ if (submitted) {
+  return (
+    <Shell>
+      <div key="thanks" className="animate-stepIn text-center">
+        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-navy text-honor">
+          <Check className="h-8 w-8" />
         </div>
-      </Shell>
-    );
-  }
+
+        <h1 className="font-display text-3xl font-semibold uppercase tracking-wide text-navy">
+          Thank You!
+        </h1>
+
+        <p className="mx-auto mt-4 max-w-md text-lg leading-relaxed text-ink">
+          Your information has been received successfully.
+          <br />
+          I will review your information and contact you shortly.
+        </p>
+
+        <div className="mx-auto mt-8 max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="font-display text-2xl font-semibold uppercase tracking-wide text-navy">
+            Collin Neumann
+          </h2>
+
+          <p className="mt-2 text-sm text-muted">
+            Licensed Insurance Agent
+          </p>
+
+          <p className="text-sm text-muted">
+            Empire Financial
+          </p>
+
+          <a
+            href="tel:+12623287608"
+            className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-navy px-6 py-4 text-xl font-semibold text-white shadow-sm transition hover:bg-navy-light"
+          >
+            📞 Call Me Now
+            <br />
+            (262) 328-7608
+          </a>
+
+          <p className="mt-5 text-sm leading-relaxed text-muted">
+            If you'd like to speak with me right away, simply tap the phone number above and your phone will call me automatically.
+          </p>
+        </div>
+
+        <div className="mt-8 flex items-center justify-center gap-1.5 text-honor">
+          <Chevron className="h-3 w-8" />
+          <Chevron className="h-3 w-8" />
+          <Chevron className="h-3 w-8" />
+        </div>
+      </div>
+    </Shell>
+  );
+}
 
   /* ---------------------------------------------------------------- */
   /*  QUESTION SCREENS                                                 */
