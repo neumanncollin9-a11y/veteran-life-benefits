@@ -395,13 +395,16 @@ export default function LeadForm() {
   className="mx-auto mb-6 h-32 w-32 rounded-full object-cover border-4 border-navy shadow-lg"
 />
 <h2 className="font-display text-2xl font-semibold uppercase tracking-wide text-navy">
-            Collin Neumann
-          </h2>
+  Collin Neumann
+</h2>
 
-          <p className="mt-2 text-sm text-muted">
-            Licensed Insurance Agent
-          </p>
+<p className="mt-1 text-sm font-semibold text-navy">
+  National Producer Number #21733835
+</p>
 
+<p className="mt-2 text-sm text-muted">
+  Licensed Insurance Agent
+</p>
           <p className="text-sm text-muted">
             Empire Financial
           </p>
