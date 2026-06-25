@@ -555,13 +555,22 @@ function Shell({ children }) {
     <main className="flex min-h-screen flex-col bg-parchment">
       {/* Top navy band with wordmark */}
       <header className="border-b-2 border-honor/60 bg-navy">
-        <div className="mx-auto flex max-w-2xl items-center gap-2.5 px-5 py-4">
-          <Chevron className="h-4 w-6 text-honor" />
-          <span className="font-display text-lg font-semibold uppercase tracking-[0.18em] text-white">
-            Veterans Coverage
-          </span>
-        </div>
-      </header>
+  <div className="mx-auto flex max-w-2xl items-center justify-between px-5 py-4">
+    <div className="flex items-center gap-2.5">
+      <Chevron className="h-4 w-6 text-honor" />
+      <span className="font-display text-lg font-semibold uppercase tracking-[0.18em] text-white">
+        Veterans Coverage
+      </span>
+    </div>
+
+    <a
+      href="tel:+12623287608"
+      className="text-white text-sm font-semibold hover:text-yellow-300"
+    >
+      (262) 328-7608
+    </a>
+  </div>
+</header>
 
       {/* Card */}
       <div className="flex flex-1 items-start justify-center px-4 py-8 sm:py-12">
